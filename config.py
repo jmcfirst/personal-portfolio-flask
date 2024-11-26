@@ -57,8 +57,7 @@ class PersonalInfo:
             "Complete end-to-end web application development for small businesses, including database design, backend APIs, and responsive frontend interfaces",
             "technologies": ["Python", "Flask", "React", "MongoDB", "MySQL"]
         }]
-        from datetime import datetime
-        self.copyright_year = str(datetime.now().year)
+        self.copyright_year = "2025"
 
     def get_data(self):
         return {
