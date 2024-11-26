@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <!-- Background Patterns -->
+  <defs>
+    <!-- Enhanced Grid Pattern -->
+    <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#00ffff" stroke-width="3" opacity="1.0">
+        <animate attributeName="stroke-opacity" values="1;0.7;1" dur="4s" repeatCount="indefinite"/>
+      </path>
+    </pattern>
+
+    <!-- Enhanced Code Pattern -->
+    <pattern id="code" width="300" height="300" patternUnits="userSpaceOnUse">
+      <!-- Frontend Code -->
+      <text x="20" y="30" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="28">&lt;div class="container"&gt;</text>
+      <text x="40" y="60" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="28">&lt;h1&gt;Skills&lt;/h1&gt;</text>
+      <text x="20" y="90" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="28">&lt;/div&gt;</text>
+      
+      <!-- Backend Code -->
+      <text x="20" y="140" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="28">def process_data():</text>
+      <text x="40" y="170" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="28">return response</text>
+      
+      <!-- Database Code -->
+      <text x="20" y="220" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="28">SELECT * FROM skills</text>
+      <text x="20" y="250" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="28">WHERE active = true</text>
+    </pattern>
+    
+    <!-- Enhanced Tech Icons Pattern -->
+    <pattern id="tech-icons" width="400" height="400" patternUnits="userSpaceOnUse">
+      <!-- HTML5 Icon -->
+      <g transform="translate(50,50)">
+        <path d="M0,0 L80,0 L88,72 L40,80 L-8,72 Z" fill="none" stroke="#00ffff" stroke-width="3" opacity="1.0">
+          <animate attributeName="stroke-opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite"/>
+        </path>
+        <text x="20" y="45" font-family="monospace" fill="#00ffff" font-size="24" opacity="1.0">HTML5</text>
+      </g>
+      
+      <!-- CSS3 Icon -->
+      <g transform="translate(200,50)">
+        <path d="M0,0 L80,0 L72,72 L40,80 L8,72 Z" fill="none" stroke="#00ffff" stroke-width="3" opacity="1.0">
+          <animate attributeName="stroke-opacity" values="1;0.7;1" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+        </path>
+        <text x="20" y="45" font-family="monospace" fill="#00ffff" font-size="24" opacity="1.0">CSS3</text>
+      </g>
+
+      <!-- JS Icon -->
+      <g transform="translate(50,200)">
+        <rect x="0" y="0" width="80" height="80" fill="none" stroke="#00ffff" stroke-width="3" opacity="1.0">
+          <animate attributeName="stroke-opacity" values="1;0.7;1" dur="3s" begin="1s" repeatCount="indefinite"/>
+        </rect>
+        <text x="25" y="45" font-family="monospace" fill="#00ffff" font-size="24" opacity="1.0">JS</text>
+      </g>
+
+      <!-- Python Icon -->
+      <g transform="translate(200,200)">
+        <path d="M10,0 C0,0 0,20 10,20 L70,20 C80,20 80,0 70,0 Z M70,20 C80,20 80,40 70,40 L10,40 C0,40 0,20 10,20 Z" 
+              fill="none" stroke="#00ffff" stroke-width="3" opacity="1.0">
+          <animate attributeName="stroke-opacity" values="1;0.7;1" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+        </path>
+        <text x="15" y="30" font-family="monospace" fill="#00ffff" font-size="20" opacity="1.0">Python</text>
+      </g>
+
+      <!-- DB Icon -->
+      <g transform="translate(50,300)">
+        <path d="M0,10 C0,0 80,0 80,10 L80,70 C80,80 0,80 0,70 Z" 
+              fill="none" stroke="#00ffff" stroke-width="3" opacity="1.0">
+          <animate attributeName="stroke-opacity" values="1;0.7;1" dur="3s" begin="2s" repeatCount="indefinite"/>
+        </path>
+        <text x="25" y="45" font-family="monospace" fill="#00ffff" font-size="24" opacity="1.0">DB</text>
+      </g>
+    </pattern>
+  </defs>
+  
+  <!-- Base Background -->
+  <rect width="100%" height="100%" fill="#1a1e24"/>
+  
+  <!-- Enhanced Pattern Layers -->
+  <rect width="100%" height="100%" fill="url(#grid)" opacity="1.0"/>
+  <rect width="100%" height="100%" fill="url(#code)" opacity="1.0"/>
+  <rect width="100%" height="100%" fill="url(#tech-icons)" opacity="1.0"/>
+  
+  <!-- Connection Points with Pulsing Animation -->
+  <g transform="translate(100,100)" opacity="1.0">
+    <!-- Connection Lines -->
+    <path d="M0,0 Q 200,100 400,0" fill="none" stroke="#00ffff" stroke-width="3">
+      <animate attributeName="d" values="M0,0 Q 200,100 400,0;M0,0 Q 200,0 400,0;M0,0 Q 200,100 400,0" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0,200 Q 200,300 400,200" fill="none" stroke="#00ffff" stroke-width="3">
+      <animate attributeName="d" values="M0,200 Q 200,300 400,200;M0,200 Q 200,200 400,200;M0,200 Q 200,300 400,200" dur="6s" begin="2s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Pulsing Connection Points -->
+    <circle cx="0" cy="0" r="8" fill="#00ffff">
+      <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="0" r="8" fill="#00ffff">
+      <animate attributeName="r" values="8;12;8" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="200" r="8" fill="#00ffff">
+      <animate attributeName="r" values="8;12;8" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="200" r="8" fill="#00ffff">
+      <animate attributeName="r" values="8;12;8" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

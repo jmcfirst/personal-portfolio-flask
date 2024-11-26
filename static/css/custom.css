@@ -1,0 +1,107 @@
+/* Custom styles to complement Bootstrap */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero section */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+                url('../images/shea.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--bs-info);
+    box-shadow: 0 0 20px rgba(var(--bs-info-rgb), 0.3);
+}
+
+/* Experience section */
+.experience {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('../images/shea.jpeg');
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+/* Skills section */
+#skills {
+    background: linear-gradient(135deg, 
+                rgba(var(--bs-dark-rgb), 0.98), 
+                rgba(var(--bs-dark-rgb), 0.95));
+}
+
+/* Projects/Services section */
+#projects {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+                url('../images/computer.svg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    min-height: 100vh;
+}
+/* Contact section */
+#contact {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+                url('../images/contact.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+/* Skills section */
+#skills {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+                url('../images/skills.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: var(--bs-light);
+    padding: 4rem 0;
+}
+
+.skill-card {
+    transition: transform 0.3s ease;
+    background: rgba(26, 30, 36, 0.8);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 255, 255, 0.3);
+}
+
+.skill-card .card-body {
+    position: relative;
+    z-index: 1;
+}
+
+/* Projects */
+.project-card {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}

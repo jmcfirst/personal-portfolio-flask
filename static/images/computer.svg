@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <!-- Enhanced Background Patterns -->
+  <defs>
+    <!-- Enhanced Grid Pattern -->
+    <pattern id="grid" width="200" height="200" patternUnits="userSpaceOnUse">
+      <path d="M 200 0 L 0 0 0 200" fill="none" stroke="#00ffff" stroke-width="12" opacity="1.0">
+        <animate attributeName="stroke-opacity" values="1;0.7;1" dur="4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 100 0 L 100 200 M 0 100 L 200 100" fill="none" stroke="#00ffff" stroke-width="8" opacity="1.0">
+        <animate attributeName="stroke-opacity" values="1;0.7;1" dur="4s" begin="2s" repeatCount="indefinite"/>
+      </path>
+      <!-- Additional grid elements -->
+      <circle cx="50" cy="50" r="5" fill="#00ffff" opacity="0.8">
+        <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="0" r="4" fill="#00ffff" opacity="0.8"/>
+      <circle cx="100" cy="100" r="4" fill="#00ffff" opacity="0.8"/>
+    </pattern>
+    
+    <!-- Enhanced Circuit Pattern -->
+    <pattern id="circuit" width="240" height="240" patternUnits="userSpaceOnUse">
+      <!-- Original circuits -->
+      <path d="M 24 120 h 72 v 72 h 72" fill="none" stroke="#00f7ff" stroke-width="6" opacity="1.0"/>
+      <circle cx="192" cy="192" r="9" fill="#00ffff" opacity="1.0"/>
+      <path d="M 216 24 v 72 h -72" fill="none" stroke="#00f7ff" stroke-width="6" opacity="1.0"/>
+      <circle cx="120" cy="96" r="9" fill="#00ffff" opacity="1.0"/>
+      
+      <!-- Enhanced Web development symbols -->
+      <text x="40" y="40" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="32">&lt;/&gt;</text>
+      <text x="160" y="160" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="32">{}</text>
+      <text x="200" y="80" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="32">$()</text>
+      <text x="100" y="120" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="28">React</text>
+      <text x="180" y="200" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="28">Node.js</text>
+      <text x="60" y="180" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="28">Python</text>
+      
+      <!-- Tech icons with animations -->
+      <g transform="translate(120,140)">
+        <path d="M10,0 L0,20 L10,40 L30,40 L40,20 L30,0 Z" fill="none" stroke="#00ffff" stroke-width="2">
+          <animate attributeName="stroke-opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+        </path>
+        <text x="12" y="25" font-family="monospace" fill="#00ffff" font-size="12">API</text>
+      </g>
+      
+      <g transform="translate(180,100)">
+        <rect x="0" y="0" width="30" height="30" fill="none" stroke="#00ffff" stroke-width="2" rx="5">
+          <animate attributeName="stroke-opacity" values="1;0.5;1" dur="3s" begin="1s" repeatCount="indefinite"/>
+        </rect>
+        <text x="8" y="20" font-family="monospace" fill="#00ffff" font-size="12">DB</text>
+      </g>
+      
+      <!-- Additional tech patterns -->
+      <path d="M 0 0 h 20 l 10 10 l 10 -10 h 20" fill="none" stroke="#00ccff" stroke-width="2" opacity="0.5"/>
+      <path d="M 120 220 q 20 -20 40 0 q 20 20 40 0" fill="none" stroke="#00ccff" stroke-width="2" opacity="0.5"/>
+    </pattern>
+    
+    <!-- New Code Pattern -->
+    <pattern id="code" width="200" height="200" patternUnits="userSpaceOnUse">
+      <rect x="10" y="10" width="80" height="10" fill="#00ccff" opacity="0.3"/>
+      <rect x="10" y="30" width="160" height="10" fill="#00ccff" opacity="0.2"/>
+      <rect x="10" y="50" width="120" height="10" fill="#00ccff" opacity="0.3"/>
+      <text x="100" y="100" font-family="monospace" fill="#00ffff" opacity="0.4" font-size="14">function()</text>
+      <text x="100" y="120" font-family="monospace" fill="#00ffff" opacity="0.4" font-size="14">return {}</text>
+    </pattern>
+  </defs>
+  
+  <!-- Enhanced Base Background -->
+  <rect width="100%" height="100%" fill="#1a1e24"/>
+  
+  <!-- Layered Enhanced Patterns -->
+  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.3"/>
+  <rect width="100%" height="100%" fill="url(#circuit)" opacity="0.5"/>
+  <rect width="100%" height="100%" fill="url(#code)" opacity="0.4"/>
+  
+  <!-- Enhanced Web Development Elements -->
+  <g transform="translate(150,90)" opacity="1.0">
+    <!-- Browser Window -->
+    <rect x="0" y="0" width="2250" height="1500" rx="16" fill="none" stroke="#00ffff" stroke-width="12">
+      <animate attributeName="stroke-opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Browser Header -->
+    <rect x="0" y="0" width="720" height="40" rx="8" fill="#00ccff" opacity="0.2"/>
+    <circle cx="25" cy="20" r="6" fill="#ff605c"/>
+    <circle cx="45" cy="20" r="6" fill="#ffbd44"/>
+    <circle cx="65" cy="20" r="6" fill="#00ca4e"/>
+    
+    <!-- URL Bar -->
+    <rect x="100" y="10" width="500" height="20" rx="4" fill="#ffffff" opacity="0.1"/>
+    <text x="120" y="25" font-family="monospace" fill="#00ffff" opacity="0.8" font-size="14">https://www.example.com</text>
+    
+    <!-- Code Editor -->
+    <rect x="60" y="75" width="780" height="500" fill="#1a1e24" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0.8;0.9" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Enhanced Code Content -->
+    <g fill="#ffffff">
+      <!-- HTML-like code -->
+      <text x="75" y="112" font-family="monospace" fill="#00ffff" opacity="1.0" font-size="24">&lt;div class="container"&gt;</text>
+      <text x="80" y="110" font-family="monospace" fill="#ffffff" opacity="0.7" font-size="12">&lt;header class="main-header"&gt;</text>
+      <text x="100" y="130" font-family="monospace" fill="#00ccff" opacity="0.6" font-size="12">&lt;nav&gt;Menu&lt;/nav&gt;</text>
+      <text x="80" y="150" font-family="monospace" fill="#ffffff" opacity="0.7" font-size="12">&lt;/header&gt;</text>
+      
+      <!-- JavaScript-like code -->
+      <text x="60" y="190" font-family="monospace" fill="#ffbd44" opacity="0.8" font-size="12">function handleSubmit() {</text>
+      <text x="80" y="210" font-family="monospace" fill="#00ca4e" opacity="0.7" font-size="12">return async (event) => {</text>
+      <text x="100" y="230" font-family="monospace" fill="#ffffff" opacity="0.6" font-size="12">const data = await fetch('/api');</text>
+      <text x="80" y="250" font-family="monospace" fill="#00ca4e" opacity="0.7" font-size="12">};</text>
+      <text x="60" y="270" font-family="monospace" fill="#ffbd44" opacity="0.8" font-size="12">}</text>
+    </g>
+    
+    <!-- Enhanced Circuit Board Patterns -->
+    <path d="M0 350 Q 300 380 600 350" stroke="#0099ff" fill="none" stroke-width="6"/>
+    <path d="M0 360 Q 300 330 600 360" stroke="#00ccff" fill="none" stroke-width="6"/>
+    <path d="M0 370 Q 150 390 300 370 Q 450 350 600 370" stroke="#0080ff" fill="none" stroke-width="6"/>
+    
+    <!-- Additional Circuit Elements with Pulsing Animation -->
+    <g opacity="1.0">
+      <circle cx="150" cy="350" r="10" fill="#00ffff">
+        <animate attributeName="r" values="10;12;10" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.8;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="300" cy="360" r="10" fill="#00ffff">
+        <animate attributeName="r" values="10;12;10" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.8;1" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="450" cy="350" r="10" fill="#00ffff">
+        <animate attributeName="r" values="10;12;10" dur="2s" begin="1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.8;1" dur="2s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <!-- New connection points with animations -->
+      <circle cx="200" cy="355" r="10" fill="#00ffff">
+        <animate attributeName="r" values="10;12;10" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.8;1" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="350" cy="365" r="10" fill="#00ffff">
+        <animate attributeName="r" values="10;12;10" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.8;1" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="500" cy="355" r="10" fill="#00ffff">
+        <animate attributeName="r" values="10;12;10" dur="2s" begin="1.3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.8;1" dur="2s" begin="1.3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Additional Tech Elements -->
+    <g opacity="0.7">
+      <path d="M100 300 h50 v30 h30" stroke="#00ccff" fill="none" stroke-width="4"/>
+      <path d="M400 300 h-50 v30 h-30" stroke="#0099ff" fill="none" stroke-width="4"/>
+      <circle cx="180" cy="300" r="6" fill="#00ccff"/>
+      <circle cx="350" cy="300" r="6" fill="#0099ff"/>
+    </g>
+  </g>
+</svg>
