@@ -57,7 +57,7 @@ class PersonalInfo:
             "Complete end-to-end web application development for small businesses, including database design, backend APIs, and responsive frontend interfaces",
             "technologies": ["Python", "Flask", "React", "MongoDB", "MySQL"]
         }]
-        self.copyright_year = "2025"
+        self.copyright_year = "2024"
 
     def get_data(self):
         return {
